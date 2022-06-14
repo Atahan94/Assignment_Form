@@ -4,26 +4,53 @@
         <title>
             Form
         </title>
+        <style>
+            input
+            {
+             display: block;
+             padding-right: 200px;
+            }
+            form > div {
+               margin-top: 40px;
+            }
+            div > label
+            {
+                display: block;
+                padding-right: 130px;
+            }
+            .labelspecific
+            {
+                display: block;
+                margin-left: 200px;
+                margin-top: 30px;
+                font-size: 25px;
+            }
+            div > div
+            {
+               margin-left: 200px;
+               font-size: 25px;
+            }
+        </style>
     </head>
-    <body style="background-image: url('https://ichef.bbci.co.uk/images/ic/1280xn/p078j75s.jpg'); background-repeat: no-repeat; background-position: top; background-size: 100%;">
+    <body style="background-image: url('https://ichef.bbci.co.uk/images/ic/1280xn/p078j75s.jpg'); background-repeat: no-repeat; background-position:">
 
-        <div style="text-align: center left; margin-left: 350px;">
+        <div style="text-align: center left; margin-left: 300px;">
             <form>
-                <div style=" margin-top: 100px;">
-                <label for="name" style="display: block; padding-right: 130px">Name</label>
-                <input type="text" id="name" placeholder="First Name" style="padding-right: 200px;">
+                <div >
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="First Name">
                 </div>
-                <div style=" margin-top: 30px;">
-                    <label for="e-name" style="display: block; padding-right: 130px">E-mail</label>
-                    <input type="text" id="e-name" placeholder="Name" style="padding-right: 200px;">
+                <div >
+                    <label for="e-name">E-mail</label>
+                    <input type="text" id="e-name" placeholder="Name">
                 </div>
-                <div style=" margin-top: 30px;">
-                    <label for="e-name" style="display: block; padding-right: 130px">Age(Optional)</label>
-                    <input type="text" id="e-name" placeholder="10" style="padding-right: 200px;">
+                <div >
+                    <label for="e-name">Age(Optional)</label>
+                    <input type="text" id="e-name" placeholder="10">
                 </div>
-                <div style=" margin-top: 30px;">
-                    <label for="Countries" style="display: block; padding-left: 80px">Select Continent Of Residence</label>
-                    <Select id="Countries" style="padding-right: 260px;">
+                <div >
+                    <label for="Countries" class="labelspecific">Select Continent Of Residence</label>
+                    <Select id="Countries" style=" width: 60%; font-size: 20px;">
                        <option value="North America">North America</option>
                        <option value="South America">South America</option>
                        <option value="Europe">Europe</option>
@@ -32,30 +59,30 @@
                        <option value="Australia">Australia</option>
                     </Select>
                 </div>
-                <div style=" margin-top: 30px;">
-                    <div style="margin-left: 120px;">Choose Your Prefered Gender</div>
+                <div>
+                    <div>Choose Your Prefered Gender</div>
                     <label for="Male" style="display: block; margin-top: 30px;">Male</label>
-                    <input type="radio" id="Male" name="Gender" style="padding-right: 200px;">
+                    <input type="radio" id="Male" name="Gender">
                     <label for="Female" style="display: block;">Female</label>
-                    <input type="radio" id="Female" name="Gender" style="padding-right: 200px;">
+                    <input type="radio" id="Female" name="Gender">
                     <label for="Other" style="display: block;">Other</label>
-                    <input type="radio" id="Other" name="Gender" style="padding-right: 200px;">
+                    <input type="radio" id="Other" name="Gender">
                 </div>
-                <div style=" margin-top: 30px;">
-                    <div style="margin-left: 120px;">Please Select atLeast One of The Option Below </div>
-                    <label for="Male" style="display: block; margin-top: 30px;">I have plant a tree or other plant</label>
-                    <input type="radio" id="Male"  style="padding-right: 200px;">
+                <div >
+                    <div>Please Select atLeast One of The Option Below </div>
+                    <label for="Male" style="display: block; margin-top: 20px;">I have plant a tree or other plant</label>
+                    <input type="radio" id="Male" >
                     <label for="Female" style="display: block;">I took part in community service for the enviroment</label>
-                    <input type="radio" id="Female"  style="padding-right: 200px;">
+                    <input type="radio" id="Female">
                     <label for="Other" style="display: block;">I promise to plant more from now</label>
-                    <input type="radio" id="Other"  style="padding-right: 200px;">
+                    <input type="radio" id="Other">
                 </div>
     
-                <div style=" margin-top: 30px;">
+                <div>
                     <label for="comments" style="margin-left: 280px; display: block">Any Comment or Suggestion</label>
                     <textarea name="" id="comments" cols="100" rows="20" style="margin: 30px;"></textarea>
                 </div>
-                <button type="submit" style="margin: ;">Submit</button>
+                <button type="submit" style="width: 80%; margin-left: 20px;">Submit</button>
             </form>
         </div>
         
